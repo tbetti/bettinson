@@ -1,0 +1,16 @@
+{
+    "short_name": "Portfolio",
+    "name": "Tiana's Portfolio",
+    "icons": [
+      {
+        "src": "Me2.jpg",
+        "type": "image/jpg",
+        "sizes": "192x192 512x512"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#0e1428",
+    "background_color": "#FFFFFC"
+  }
+  
