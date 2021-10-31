@@ -1,10 +1,10 @@
 import React from 'react';
-import '../css/style.css';
-import '../css/screen-adjust.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import './css/style.css';
+import './css/screen-adjust.css';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Footer() {
-    console.log({FontAwesomeIcon});
+    // console.log({FontAwesomeIcon});
     return (
         <footer>
             <h4>Coded and Designed by Tiana Bettinson</h4>
