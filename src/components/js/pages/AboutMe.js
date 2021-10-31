@@ -1,4 +1,5 @@
 import React from "react";
+import image from "../../images/Me1.jpg";
 
 export default function AboutMe() {
     return (
@@ -6,7 +7,7 @@ export default function AboutMe() {
             <h2>Hi, I'm Tiana!</h2>
             <div className="section-text">
                 <div className="about-img-container">
-                    <img className="about-img" src="./components/images/Me1.jpg" alt="Tiana Bettinson"/>
+                    <img className="about-img" src={image} alt="Tiana Bettinson"/>
                 </div>
                 <p>
                     A former elementary school math teacher turned full-stack web developer.
