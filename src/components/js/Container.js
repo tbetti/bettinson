@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import NavTabs from "./NavTabs";
 import AboutMe from "./pages/AboutMe";
+import Portfolio from "./pages/Portfolio";
 
 export default function Container(){
     const [currentPage, setCurrentPage] = useState('About Me');
@@ -8,6 +9,9 @@ export default function Container(){
     const renderPage= ()=>{
         if(currentPage === 'About Me'){
             return <AboutMe />
+        }
+        if(currentPage === 'Portfolio'){
+            return <Portfolio />
         }
         // Do the same for all the pages
     }
