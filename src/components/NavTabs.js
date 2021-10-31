@@ -23,7 +23,13 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                     >
                         Portfolio
                     </a>
-                    <a href="#contact">Contact</a>
+                    <a 
+                        href="#contact"
+                        onClick={() => handlePageChange('Contact')}
+                        className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+                    >
+                        Contact
+                    </a>
                 </div>
             </div>
             <ul>
@@ -44,7 +50,13 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                         Portfolio
                     </a>
                 </li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a 
+                        href="#contact"
+                        onClick={() => handlePageChange('Contact')}
+                        className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+                    >
+                        Contact
+                    </a></li>
                 <li><a href="#resume">Resume</a></li>
             </ul>
         </div>
