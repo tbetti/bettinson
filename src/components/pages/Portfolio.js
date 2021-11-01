@@ -1,14 +1,20 @@
 import React from 'react';
 import WorkCard from './workCard';
-// import '../js/workCards';
-// import '../js/worksites';
+import {
+    CoffeeChat,
+    GameTime,
+    GuessWord,
+    LOCSearchTool,
+    TechBlog,
+    WeatherGenerator
+} from '../images/index';
 
 var workSites = [
     {
         id: "tech-blog",
         title: "The Tech Blog",
         type: "Sequelize - MySql - Socket.IO - HTML/CSS - JS",
-        image: "./assets/images/tech-blog.png",
+        image: TechBlog,
         site: "https://bettinson-techblog.herokuapp.com/",
         gitHub: "https://github.com/tbetti/tech-blog",
         description: "View, post, and comment on blogs about technology and web development"
@@ -17,7 +23,7 @@ var workSites = [
         id: "coffee-chat",
         title: "Birds of a Feather Chat",
         type: "Sequelize - MySql - Socket.IO - HTML/CSS - JS",
-        image: "./assets/images/coffee-chat.png",
+        image: CoffeeChat,
         site: "https://birds-of-a-feather-chat.herokuapp.com/",
         gitHub: "https://github.com/tbetti/coffee-chat",
         description: "Chat instantly with other logged-in users!"
@@ -26,7 +32,7 @@ var workSites = [
         id: "weather-generator",
         title: "Weather Generator",
         type: "HTML - CSS - JS - API",
-        image: "./assets/images/Weather-Generator.png",
+        image: WeatherGenerator,
         site: "https://tbetti.github.io/Weather-Dashboard/",
         gitHub: "https://github.com/tbetti/Weather-Dashboard",
         description: "Show current and forecasted weather in a city"
@@ -35,7 +41,7 @@ var workSites = [
         id: "guess-word",
         title: "Guess the Word Game",
         type: "HTML - CSS - JS",
-        image: "./assets/images/guess_the_word.png",
+        image: GuessWord,
         site: "https://tbetti.github.io/Guess-the-Word/",
         gitHub: "https://github.com/tbetti/Guess-the-Word",
         description: "Guess a word one letter at a time"
@@ -44,7 +50,7 @@ var workSites = [
         id: "loc-search-tool",
         title: "Library of Congress Search Tool",
         type: "HTML - CSS - JS - API",
-        image: "./assets/images/loc-search-tool.png",
+        image: LOCSearchTool,
         site: "https://tbetti.github.io/Library-of-Congress-Search-Tool/",
         gitHub: "https://github.com/tbetti/Library-of-Congress-Search-Tool",
         description: "Search the Library of Congress database"
@@ -53,7 +59,7 @@ var workSites = [
         id: "game-time",
         title: "GameTime Scheduling App",
         type: "HTML - CSS - JS - API",
-        image: "./assets/images/game-time.png",
+        image: GameTime,
         site: "https://varunisinha.github.io/game-time/",
         gitHub: "https://github.com/varunisinha/game-time",
         description: "Schedule events at football stadiums"
