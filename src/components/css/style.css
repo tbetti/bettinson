@@ -147,10 +147,10 @@ a:hover{
     background-color: var(--lt-blue);
     position: absolute;
     display: none;
-    margin-left: 2%;
+    margin-left: 1%;
     width: 100%;
-    opacity: 0.9;
-    top: 0;
+    height: 60%;
+    top: 38%;
     left: 0;
     bottom: 0;
 }
