@@ -3,6 +3,7 @@ import NavTabs from "./NavTabs";
 import AboutMe from "./pages/AboutMe";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
 
 export default function Container(){
     const [currentPage, setCurrentPage] = useState('About Me');
@@ -17,7 +18,9 @@ export default function Container(){
         if(currentPage === 'Contact'){
             return <Contact />
         }
-        // Do the same for all the pages
+        if(currentPage === 'Resume'){
+            return <Resume />
+        }
     }
     
     const handlePageChange = (page) => setCurrentPage(page);

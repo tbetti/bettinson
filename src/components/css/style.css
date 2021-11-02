@@ -200,6 +200,17 @@ a:hover{
     margin: 2%;
 }
 
+.error-messge-container{
+    margin-bottom: 2%;
+}
+
+.error-message{
+    font-size:20px;
+    color: var(--magenta-accent);
+    text-align: center;
+}
+
+
 .section-text{
     margin-top: 0%;
     margin-bottom: 0%;
@@ -249,11 +260,10 @@ a:hover{
 /* Styling for the Footer */
 footer{
     text-align: center;
-    background-color: var(--bkgd-color2);
     margin-top: 2%;
 }
 footer h4{
-    color: var(--blue-main);
+    color: var(--bkgd-color2);
     font-size: 24px;
     text-transform: lowercase;
     padding: 1%;

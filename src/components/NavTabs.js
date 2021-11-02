@@ -1,6 +1,6 @@
 import React from "react";
 import './css/style.css';
-import './css/screen-adjust.css';
+// import './css/screen-adjust.css';
 
 export default function NavTabs({ currentPage, handlePageChange }) {
     return (
@@ -12,7 +12,6 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                         href="#about-me"
                         onClick={() => handlePageChange('About Me')}
                         className={currentPage === 'About Me' ? 'nav-link active' : 'nav-link'}
-                        // From here I'm going to adjust the CSS to display this as a different color if active
                     >
                         About Me
                     </a>
@@ -30,14 +29,20 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                     >
                         Contact
                     </a>
+                    <a
+                        href="#resume"
+                        onClick={() => handlePageChange('Resume')}
+                        className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+                    >
+                        Resume
+                    </a>
                 </div>
             </div>
-            <ul>
+            <ul className="nav-tab">
                 <li><a
                         href="#about-me"
                         onClick={() => handlePageChange('About Me')}
                         className={currentPage === 'About Me' ? 'nav-link active' : 'nav-link'}
-                        // From here I'm going to adjust the CSS to display this as a different color if active
                     >
                         About Me
                     </a></li>
@@ -57,7 +62,13 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                     >
                         Contact
                     </a></li>
-                <li><a href="#resume">Resume</a></li>
+                <li><a 
+                    href="#resume"
+                    onClick={() => handlePageChange('Resume')}
+                    className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+                    >
+                        Resume
+                    </a></li>
             </ul>
         </div>
     )
