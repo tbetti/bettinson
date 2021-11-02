@@ -45,10 +45,10 @@ button:hover, button a:hover{
 .dropdown{
     display: none;
 }
-.navbar ul {
+.nav-tab {
     float: right;
 }
-.navbar ul li{
+.nav-tab li{
     display: inline;
     padding: 15px;
     font-size: 20px;
@@ -221,6 +221,29 @@ a:hover{
 
 .message{
     height: 50vh;
+}
+
+/* Styling for Resume Section */
+.resume-title{
+    margin-bottom: 2%;
+}
+.resume-heading{
+    margin-left: 15%;
+    margin-bottom: 0.5%;
+    font-size: 28px;
+}
+.resume-list-container{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 24px;
+}
+
+.resume-list-container ul{
+    margin-right: 5%;
+}
+
+.resume-list-container li{
+    margin-bottom: 5%;
 }
 
 /* Styling for the Footer */
