@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/bettinson/static/css/main.5330ce5a.chunk.css",
+    "main.js": "/bettinson/static/js/main.ece95e89.chunk.js",
+    "main.js.map": "/bettinson/static/js/main.ece95e89.chunk.js.map",
+    "runtime-main.js": "/bettinson/static/js/runtime-main.ce13beb3.js",
+    "runtime-main.js.map": "/bettinson/static/js/runtime-main.ce13beb3.js.map",
+    "static/js/2.f1a15992.chunk.js": "/bettinson/static/js/2.f1a15992.chunk.js",
+    "static/js/2.f1a15992.chunk.js.map": "/bettinson/static/js/2.f1a15992.chunk.js.map",
+    "index.html": "/bettinson/index.html",
+    "static/css/main.5330ce5a.chunk.css.map": "/bettinson/static/css/main.5330ce5a.chunk.css.map",
+    "static/js/2.f1a15992.chunk.js.LICENSE.txt": "/bettinson/static/js/2.f1a15992.chunk.js.LICENSE.txt",
+    "static/media/Me1.e88f1f5d.jpg": "/bettinson/static/media/Me1.e88f1f5d.jpg",
+    "static/media/Resume.2e1d3794.png": "/bettinson/static/media/Resume.2e1d3794.png",
+    "static/media/Weather-Generator.bb11e5e9.png": "/bettinson/static/media/Weather-Generator.bb11e5e9.png",
+    "static/media/coffee-chat.9fdf936a.png": "/bettinson/static/media/coffee-chat.9fdf936a.png",
+    "static/media/game-time.85395dc8.png": "/bettinson/static/media/game-time.85395dc8.png",
+    "static/media/guess_the_word.2576e341.png": "/bettinson/static/media/guess_the_word.2576e341.png",
+    "static/media/loc-search-tool.261e72a8.png": "/bettinson/static/media/loc-search-tool.261e72a8.png",
+    "static/media/resume.9ef2908f.pdf": "/bettinson/static/media/resume.9ef2908f.pdf",
+    "static/media/tech-blog.32bda85e.png": "/bettinson/static/media/tech-blog.32bda85e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ce13beb3.js",
+    "static/js/2.f1a15992.chunk.js",
+    "static/css/main.5330ce5a.chunk.css",
+    "static/js/main.ece95e89.chunk.js"
+  ]
+}
