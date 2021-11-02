@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { validateEmail } from "../js/helpers";
 
 export default function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    // Maybe include an error message to display???
+    const [errorMessage, setErrorMessage] = useState('');
 
     const handleInput = (event) => {
         const { target } = event;
@@ -22,14 +23,29 @@ export default function Contact() {
         }
     }
 
+    // Keeps returning false for email validation
     const handleFormSubmit = (event) => {
         event.preventDefault();
+
+        if (!validateEmail(email)) {
+            setErrorMessage('Not a valid email');
+            return;
+        }
+        if(message===''){
+            setErrorMessage('You must include a message');
+            return;
+        }
+
+        setErrorMessage('Message sent!');
+        setName('');
+        setEmail('');
+        setMessage('');
     }
 
     return (
         <div className="contact-section">
             <h2>Contact</h2>
-            <p class="section-text">
+            <p className="section-text">
                 If you like my websites, be sure to reach out!
                 <span>
                     Also, check out my other work and see what I've been up to on
@@ -38,7 +54,7 @@ export default function Contact() {
                 I look forward to connecting with you!
             </p>
             <form className="contact-form">
-                <input 
+                <input
                     value={name}
                     name="name"
                     onChange={handleInput}
@@ -69,6 +85,12 @@ export default function Contact() {
                     Submit
                 </button>
             </form>
+            {/* Send message if email invalid or message sent */}
+            {errorMessage && (
+                <div className="error-message-container">
+                    <h4 className="error-message">{errorMessage}</h4>
+                </div>
+            )}
         </div>
     )
 }
