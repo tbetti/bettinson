@@ -27,6 +27,19 @@ export default function Contact() {
     const handleFormSubmit = (event) => {
         event.preventDefault();
 
+        if (validateEmail(email) && message !=='') {
+            setErrorMessage('Message sent!');
+            setName('');
+            setEmail('');
+            setMessage('');
+            return;
+        }
+
+    }
+
+    const handleValidation = (event) =>{
+        event.preventDefault();
+
         if (!validateEmail(email)) {
             setErrorMessage('Not a valid email');
             return;
@@ -34,12 +47,7 @@ export default function Contact() {
         if(message===''){
             setErrorMessage('You must include a message');
             return;
-        }
-
-        setErrorMessage('Message sent!');
-        setName('');
-        setEmail('');
-        setMessage('');
+        }   
     }
 
     return (
@@ -69,6 +77,7 @@ export default function Contact() {
                     type="email"
                     placeholder="email"
                     className="form-element"
+                    onMouseOut={handleValidation}
                 />
                 <textarea
                     value={message}
@@ -77,6 +86,7 @@ export default function Contact() {
                     type="text"
                     placeholder="message"
                     className="form-element message"
+                    onMouseOut={handleValidation}
                 />
                 <button
                     type="button"
