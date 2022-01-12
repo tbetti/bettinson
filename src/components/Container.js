@@ -5,6 +5,9 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 
+////////////////////////////////////////
+// Render pages based on selected tab //
+////////////////////////////////////////
 export default function Container(){
     const [currentPage, setCurrentPage] = useState('About Me');
 

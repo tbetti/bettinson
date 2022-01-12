@@ -3,8 +3,12 @@ import './css/style.css';
 // import './css/screen-adjust.css';
 
 export default function NavTabs({ currentPage, handlePageChange }) {
+    ////////////////////////////////////////////////
+    // handlePageChange defined in /Container.js //
+    ///////////////////////////////////////////////
     return (
         <div className="navbar">
+            {/* Dropdown menu - to be displayed on screens smaller than 800 px */}
             <div className="dropdown">
                 <i className="material-icons drop-btn" id="drop-btn" style={{ fontSize: "42px", color: "white" }}>menu</i>
                 <div className="drop-content" id="menu" >
@@ -38,6 +42,7 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                     </a>
                 </div>
             </div>
+            {/* Full menu - to be displayed on screens > 800 */}
             <ul className="nav-tab">
                 <li><a
                         href="#about-me"
