@@ -10,7 +10,9 @@ export default function NavTabs({ currentPage, handlePageChange }) {
     return (
         <Navbar bg="dark" variant="dark" className="navbar">
 
-            {/* <div className="navbar"> */}
+            <Navbar.Brand>
+                <h1>T<span>iana </span>Betti<span>nson</span></h1>
+            </Navbar.Brand>
             {/* Dropdown menu - to be displayed on screens smaller than 800 px */}
             <div className="dropdown">
                 <i className="material-icons drop-btn" id="drop-btn" style={{ fontSize: "42px", color: "white" }}>menu</i>
@@ -47,8 +49,6 @@ export default function NavTabs({ currentPage, handlePageChange }) {
             </div>
             {/* Full menu - to be displayed on screens > 800 */}
             <Nav variant="tabs" className="nav-tab">
-                {/* <ul className="nav-tab"> */}
-                {/* <li><a */}
                 <Nav.Item className="nav-item">
                     <Nav.Link
                         href="#about-me"
@@ -56,11 +56,8 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                         className={currentPage === 'About Me' ? 'navlink active' : 'navlink'}
                     >
                         About Me
-                        {/* </a></li> */}
                     </Nav.Link>
                 </Nav.Item>
-                {/* <li>
-                    <a  */}
                 <Nav.Item className="nav-item">
                     <Nav.Link
                         href="#work"
@@ -68,11 +65,8 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                         className={currentPage === 'Portfolio' ? 'navlink active' : 'navlink'}
                     >
                         Portfolio
-                        {/* </a>
-                </li> */}
                     </Nav.Link>
                 </Nav.Item>
-                {/* <li><a  */}
                 <Nav.Item className="nav-item">
                     <Nav.Link
                         href="#contact"
@@ -80,10 +74,8 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                         className={currentPage === 'Contact' ? 'navlink active' : 'navlink'}
                     >
                         Contact
-                        {/* </a></li> */}
                     </Nav.Link>
                 </Nav.Item>
-                {/* <li><a  */}
                 <Nav.Item className="nav-item">
                     <Nav.Link
                         href="#resume"
@@ -91,12 +83,9 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                         className={currentPage === 'Resume' ? 'navlink active' : 'navlink'}
                     >
                         Resume
-                        {/* </a></li> */}
                     </Nav.Link>
                 </Nav.Item>
-                {/* </ul> */}
             </Nav>
-            {/* </div> */}
         </Navbar>
     )
 }
